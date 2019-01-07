@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_stocking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ld.materialmanagement.activity.StockingActivity">
+
+    <include layout="@layout/include_tool_bar_center_text"/>
+
+    <ImageView
+        android:id="@+id/im_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_level24"
+        android:src="@drawable/ic_no_data"
+        />
+</LinearLayout>

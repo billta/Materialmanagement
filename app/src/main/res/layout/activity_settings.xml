@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ld.materialmanagement.activity.SettingsActivity">
+
+    <include layout="@layout/include_tool_bar_center_text"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_14"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+
+        <LinearLayout
+            android:id="@+id/rl_change_port"
+            style="@style/option_item_rl">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_wifi_tethering"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="@string/change_ip"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_current_port"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_12"
+                tools:text="当前地址是"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_14"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+
+        <LinearLayout
+            android:id="@+id/ll_double_exit"
+            style="@style/option_item_rl">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_exit_to_app_black"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="@string/double_exit"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:contentDescription="@null"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_12"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_14"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+
+        <LinearLayout
+            android:id="@+id/ll_clear_cache"
+            style="@style/option_item_rl">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_autorenew"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="@string/clear_cache"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_14"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+
+        <LinearLayout
+            android:id="@+id/ll_check_update"
+            style="@style/option_item_rl">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="12dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_cloud_download"/>
+
+            <TextView
+                style="@style/option_item_text"
+                android:text="@string/check_update"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/list_divider_color"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_24"/>
+
+    <Button
+        android:id="@+id/btn_exit_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_level8"
+        android:layout_marginRight="@dimen/size_level8"
+        android:background="@drawable/selector_btn_red"
+        android:text="@string/exit_account"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_16"
+        />
+
+</LinearLayout>

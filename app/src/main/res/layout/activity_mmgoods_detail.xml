@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mmgoods_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ld.materialmanagement.activity.MMGoodsDetailActivity">
+
+    <include layout="@layout/include_tool_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_4"
+                card_view:cardBackgroundColor="#FFFFFF"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardPreventCornerOverlap="true"
+                card_view:cardUseCompatPadding="true"
+                card_view:contentPadding="10dp"
+                >
+
+                <TableLayout
+                    android:id="@+id/tb_mm_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_4"
+                    android:stretchColumns="*"
+                    >
+
+                    <TableRow>
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:descTextColor="@color/text_blue"
+                            app:titleText="备件名称"
+                            />
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="物资编码"
+                            />
+
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_part_number"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="料号"-->
+                            <!--/>-->
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_goods_type_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="物资类型"
+                            />
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_spect_property"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="规格型号"
+                            />
+
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_order_no"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="顺序号"-->
+                            <!--/>-->
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_category_name"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="库存分类名称"-->
+                            <!--/>-->
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_location_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="库房"
+                            />
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_goods_place_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="位置号"
+                            />
+                    </TableRow>
+
+                    <TableRow>
+
+
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_current_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="实际数量"
+                            />
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_std_stock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="定额数量"
+                            />
+
+                    </TableRow>
+
+
+                    <!--<TableRow>-->
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_std_cost"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="计划单价"-->
+                            <!--/>-->
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_avg_cost"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="实际单价"-->
+                            <!--/>-->
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_goods_money"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="库存计划金额"-->
+                            <!--/>-->
+                    <!--</TableRow>-->
+
+                    <!--<TableRow>-->
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_fact_money"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="库存实际金额"-->
+                            <!--/>-->
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_min_level"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="最小安全库存"-->
+                            <!--/>-->
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                            <!--android:id="@+id/dv_max_level"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:titleText="最大储备定额"-->
+                            <!--/>-->
+                    <!--</TableRow>-->
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                        <!--android:id="@+id/dv_is_enveloped"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:titleText="封账标记"-->
+                        <!--/>-->
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_store_keeper_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="保管员"
+                            />
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:id="@+id/dv_measure_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="计量单位"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow>
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            app:titleText="序号"
+                            android:id="@+id/dv_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            app:titleText="所属系统"
+                            android:id="@+id/dv_owner_system"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            app:titleText="所属设备"
+                            android:id="@+id/dv_owner_equip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            app:titleText="Sap码"
+                            android:id="@+id/dv_sap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            app:titleText="厂家"
+                            android:id="@+id/dv_factory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            app:titleText="电话"
+                            android:id="@+id/dv_tel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            app:titleText="设备型号"
+                            android:id="@+id/dv_equip_model"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.ld.materialmanagement.widget.DescriptionImageView
+                            android:id="@+id/div_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:descStatus="true"
+                            app:titText="状态"
+                            />
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+
+                    <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                    <!--android:id="@+id/dv_last_export_date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:titleText="最后出库日期"-->
+                    <!--/>-->
+
+                    <!--<com.ld.materialmanagement.widget.DescriptionView-->
+                    <!--android:id="@+id/dv_last_import_date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:titleText="最后入库日期"-->
+                    <!--/>-->
+
+                        <com.ld.materialmanagement.widget.DescriptionView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:titleText="备注"
+                            />
+
+                    </TableRow>
+
+                </TableLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btn_in_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_level5"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_normal_btn"
+                    android:text="入库信息"
+                    android:textColor="@color/white"
+                    />
+
+                <Button
+                    android:id="@+id/btn_out_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_level5"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_normal_btn"
+                    android:text="出库信息"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

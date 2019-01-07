@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_4"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPadding="10dp">
+
+    <TableLayout
+        android:id="@+id/tb_in_lib_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_4"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:titleText="入库单号"
+                app:descTextColor="@color/text_blue"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:titleText="日期"
+                app:descTextColor="@color/text_blue"
+                />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</android.support.v7.widget.CardView>

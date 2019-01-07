@@ -1,0 +1,296 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.ld.materialmanagement.fragment.MoreFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <com.ld.materialmanagement.widget.SolarSystemView
+            android:id="@+id/user_view_solar_system"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@null"
+            android:paddingBottom="8dp"
+            android:scaleType="centerCrop"
+            app:layout_collapseMode="parallax"
+            app:layout_collapseParallaxMultiplier="0.7"/>
+
+        <LinearLayout
+            android:id="@+id/rl_show_my_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <FrameLayout
+                android:id="@+id/user_info_icon_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_face"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:text="用户名"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dedede"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_stocking"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_stocking"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/stocking"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="52dp"
+                    android:background="@color/list_divider_color"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_14"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_loan_out"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_build_black"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/loan_out"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="52dp"
+                    android:background="@color/list_divider_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_loan_in"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_swap_horiz_black"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/loan_in"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="52dp"
+                    android:background="@color/list_divider_color"/>
+            </LinearLayout>
+            <!--在这里继续扩展-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_14"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="52dp"
+                    android:background="@color/list_divider_color"/>
+
+                <LinearLayout
+                    android:id="@+id/rl_setting"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_fingerprint"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/settings"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="52dp"
+                    android:background="@color/list_divider_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rl_about"
+                    style="@style/option_item_rl">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_marginRight="12dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_info_outline"/>
+
+                    <TextView
+                        style="@style/option_item_text"
+                        android:text="@string/about"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="10dp"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_arrow_right"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="52dp"
+                    android:background="@color/list_divider_color"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

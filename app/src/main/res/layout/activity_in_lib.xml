@@ -1,0 +1,218 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.ld.materialmanagement.activity.LoginActivity">
+
+    <include layout="@layout/include_tool_bar"/>
+
+    <TableLayout
+        android:id="@+id/tb_in_lib_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_4"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="入库单号"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_in_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="入库日期"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_location_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="仓库编号"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_money_ru_ku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="入库金额"
+                />
+        </TableRow>
+
+        <TableRow>
+
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_money_shui_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="税额总计"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_money_jia_shui_he_ji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="价税合计"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_supplier_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="供货单位"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_contract_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="合同编号"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionImageView
+                android:id="@+id/div_is_on_the_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titText="是否在途"
+                />
+
+
+            <com.ld.materialmanagement.widget.DescriptionImageView
+                android:id="@+id/div_is_audited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:titText="是否稽核"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_check_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="结余月份"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_signer_cai_wu_ji_he"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="财务稽核"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_invoice_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="发票号"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_flow_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="流程状态"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_person_jing_ban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="经办人"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_signer_ku_guan_yuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="库管员"
+                />
+        </TableRow>
+
+        <TableRow>
+
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_signer_wu_zi_zhu_guan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="物资主管"
+                />
+
+            <com.ld.materialmanagement.widget.DescriptionView
+                android:id="@+id/dv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:descTextColor="@color/text_blue"
+                app:titleText="备注"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_level8"
+        android:background="@color/bga_adapter_divider"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/size_level4"
+        android:text="@string/backup_list"
+        android:textSize="@dimen/text_size_10"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

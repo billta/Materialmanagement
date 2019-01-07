@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="lineColor" format="reference"/>
+
+
+    <!-- 自定义的属性-->
+    <declare-styleable name="DescriptionView">
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="descTextSize" format="dimension"/>
+        <attr name="descTextColor" format="color"/>
+        <attr name="titleText" format="string"/>
+        <attr name="descText" format="string"/>
+        <attr name="maxEms" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="DescriptionImageView">
+        <attr name="titText" format="string"/>
+        <attr name="descStatus" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension"/>
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension"/>
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="OptionItemView">
+        <attr name="title" format="string"/>
+        <attr name="title_size" format="dimension"/>
+        <attr name="title_color" format="color"/>
+        <attr name="left_src" format="reference|color"/>
+        <attr name="left_text" format="string"/>
+        <attr name="left_text_size" format="dimension"/>
+        <attr name="left_image_margin_left" format="dimension"/>
+        <attr name="left_text_margin_left" format="dimension"/>
+        <attr name="left_image_margin_right" format="dimension"/>
+        <attr name="left_text_color" format="color"/>
+        <attr name="right_src" format="reference|color"/>
+        <attr name="right_text" format="string"/>
+        <attr name="right_text_size" format="dimension"/>
+        <attr name="right_image_margin_left" format="dimension"/>
+        <attr name="right_image_margin_right" format="dimension"/>
+        <attr name="right_text_margin_right" format="dimension"/>
+        <attr name="right_text_color" format="color"/>
+        <attr name="splite_mode" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="DropDownMenu">
+
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+        <attr name="ddmenuMenuHeightPercent" format="float"/>
+    </declare-styleable>
+
+</resources>

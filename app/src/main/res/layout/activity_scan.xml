@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/rl_scan_layout"
+    style="@style/MatchMatch"
+    tools:context="com.ld.materialmanagement.activity.ScanActivity">
+
+
+        <cn.bingoogolapple.qrcode.zxing.ZXingView
+            android:id="@+id/zxingview"
+            style="@style/MatchMatch"
+            app:qrcv_animTime="1000"
+            app:qrcv_barCodeTipText="将条码放入框内，即可自动扫描"
+            app:qrcv_barcodeRectHeight="140dp"
+            app:qrcv_borderColor="@android:color/white"
+            app:qrcv_borderSize="1dp"
+            app:qrcv_cornerColor="@color/colorPrimaryDark"
+            app:qrcv_cornerLength="20dp"
+            app:qrcv_cornerSize="3dp"
+            app:qrcv_isBarcode="false"
+            app:qrcv_isCenterVertical="false"
+            app:qrcv_isOnlyDecodeScanBoxArea="false"
+            app:qrcv_isScanLineReverse="true"
+            app:qrcv_isShowDefaultGridScanLineDrawable="false"
+            app:qrcv_isShowDefaultScanLineDrawable="true"
+            app:qrcv_isShowTipBackground="true"
+            app:qrcv_isShowTipTextAsSingleLine="false"
+            app:qrcv_isTipTextBelowRect="false"
+            app:qrcv_maskColor="#33FFFFFF"
+            app:qrcv_qrCodeTipText="将扫描框对准二维码/条码，即可自动扫描"
+            app:qrcv_rectWidth="220dp"
+            app:qrcv_scanLineColor="@color/colorPrimaryDark"
+            app:qrcv_scanLineMargin="0dp"
+            app:qrcv_scanLineSize="0.5dp"
+            app:qrcv_tipTextColor="@android:color/white"
+            app:qrcv_tipTextSize="10sp"
+            app:qrcv_toolbarHeight="20dp"
+            app:qrcv_topOffset="18dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/flashlight"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:layout_marginBottom="@dimen/space_100"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/bulb_dark"
+            android:visibility="gone"
+            />
+
+       <include layout="@layout/include_scan_control"/>
+
+
+</RelativeLayout>

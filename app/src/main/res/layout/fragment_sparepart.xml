@@ -1,0 +1,38 @@
+<!--<android.support.v4.widget.SwipeRefreshLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/layout_swipe_refresh"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context="com.ld.materialmanagement.fragment.InLibraryFragment">-->
+
+
+<!--<android.support.v7.widget.RecyclerView-->
+<!--android:id="@+id/rv_mm_goods"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"/>-->
+<com.ld.materialmanagement.widget.DropDownMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dropDownMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:dddividerColor="@color/gray"
+    app:ddmaskColor="@color/mask_color"
+    app:ddmenuBackgroundColor="@color/white"
+    app:ddmenuMenuHeightPercent="0.5"
+    app:ddmenuSelectedIcon="@mipmap/drop_down_selected_icon"
+    app:ddmenuTextSize="13sp"
+    app:ddmenuUnselectedIcon="@mipmap/drop_down_unselected_icon"
+    app:ddtextSelectedColor="@color/colorPrimary"
+    app:ddtextUnselectedColor="@color/drop_down_unselected"
+    app:ddunderlineColor="@color/gray"
+    >
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/rv_mm_goods"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+</com.ld.materialmanagement.widget.DropDownMenu>
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->

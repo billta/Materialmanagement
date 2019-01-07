@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    sourceSets.main.jniLibs.srcDirs = ['jniLibs']
+    defaultConfig {
+        applicationId "com.ld.materialmanagement"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "v1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            moduleName "LdJni"
+            ldLibs "log", "z", "m"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+//    buildTypes {
+//
+//        debug {
+//            minifyEnabled true
+//        }
+//
+//        release {
+
+            // 开启混淆
+//            minifyEnabled false
+//            // Zipalign优化
+//            zipAlignEnabled true
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            // 前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        // 输出apk名称为appname-1.0-beta1-xxxx-xx-xx.apk
+//                        def fileName = "app-${defaultConfig.versionName}-beta1-${releaseTime()}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+//        }
+//    }
+
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile 'com.android.support:cardview-v7:25.1.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.android.support:design:25.1.1'
+    //retrofit 联网
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //日志打印
+    compile 'com.orhanobut:logger:1.15'
+
+    //统计图
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.0'
+    //圆形图片
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    //二维码
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    //一个Dialog
+    compile 'me.drakeet.materialdialog:library:1.2.2'
+    //申请权限
+    compile 'pub.devrel:easypermissions:0.3.0'
+    //选择本地照片
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //json依赖Android版
+    compile 'com.alibaba:fastjson:1.1.56.android'
+    //和labelView有关
+    compile 'com.github.linger1216:labelview:v1.1.2'
+}
